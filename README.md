@@ -1,5 +1,5 @@
 # Blogapi Docker
-This project is a core system of Cassetex Web.
+This project is a core system of Blogapi Web.
 
 ### Docker Services
 - nginx
