@@ -83,8 +83,8 @@ if [ $1 == "ready" ]; then
     print_color "green" "Thank you"
 fi
 
-if [ $1 == "about" ]; then
+
     print_color "green" "Inspird By- Nahid Bin Azhar"
-    print_color "green" "Updated By - Md.Taraq Rahman"
+    print_color "green" "Created By - Md.Taraq Rahman"
     print_color "green" "Email - taraqr9@gmail.com"
-fi
+

@@ -27,14 +27,15 @@ services:
     restart: unless-stopped
     tty: true
     ports: 
-      - "4306:3306"
+      - "3306:3306"
     volumes:
       - .docker/mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: blogapi
-      MYSQL_USER: root
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
+      # MYSQL_ALLOW_EMPTY_PASSWORD: true  // uncomment this if you dont have a password on your database.
+      MYSQL_DATABASE: 
+      MYSQL_USER: 
+      MYSQL_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: 
       # - MYSQL_DATABASE=${DB_DATABASE}
       # - MYSQL_PASSWORD=${DB_PASSWORD}
       # - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
