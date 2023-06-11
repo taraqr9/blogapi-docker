@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
     tty: true
     ports: 
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - .docker/mysql:/var/lib/mysql
     environment:
@@ -40,6 +40,18 @@ services:
       # TZ=UTC
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+    networks:
+      - laravel
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    depends_on:
+      - mysql
     networks:
       - laravel
 
