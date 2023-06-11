@@ -32,7 +32,7 @@ if [ $# -eq 0 ]; then
     exit
 fi
 
-if [ -d /app ]   # For file "if [ -f /home/jouleslabs/file ]"
+if [ -d /app ]   # For file
 then
   print_color "green" "app directory present.Going next.."
 else
