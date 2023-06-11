@@ -73,18 +73,14 @@ if [ $1 == "ready" ]; then
     print_color "green" "Resolve dependencies ..."
     $COMPOSE exec app composer install
 
-    print_color "green" "Migrating database"
-    $COMPOSE exec app php artisan migrate
-
-    print_color "green" "Seeding database"
-    $COMPOSE exec app php artisan db:seed
+    print_color "green" "Configure your env file and migrate your database"
 
     print_color "green" "Blog Api project is ready to use"
     print_color "green" "Thank you"
 fi
 
 
-    print_color "green" "Inspird By- Nahid Bin Azhar"
+    print_color "green" "Inspird By - Nahid Bin Azhar"
     print_color "green" "Created By - Md.Taraq Rahman"
-    print_color "green" "Email - taraqr9@gmail.com"
+    print_color "green" "Email      - taraqr9@gmail.com"
 
