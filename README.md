@@ -5,6 +5,7 @@ This project is a core system of Blogapi Web.
 - nginx
 - app
 - database
+- phpmyadmin
 
 If you do not have docker installed please install `docker` and `docker-compose` first.
 
