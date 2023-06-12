@@ -31,13 +31,9 @@ services:
     volumes:
       - .docker/mysql:/var/lib/mysql
     environment:
-      # MYSQL_ALLOW_EMPTY_PASSWORD: true  // uncomment this if you don't have a password on your database.
-      MYSQL_DATABASE: 
-      MYSQL_USER: 
-      # MYSQL_DATABASE=${DB_DATABASE}
-      # MYSQL_PASSWORD=${DB_PASSWORD}
-      # MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
-      # TZ=UTC
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: blogapi
+      MYSQL_USER: root
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
