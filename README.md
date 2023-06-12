@@ -35,3 +35,8 @@ To stop all the services, run the command
 ```shell
 docker-compose down
 ```
+
+If everything is ok, then hit 
+1. `http://localhost:8003` for laravel server
+1. `http://localhost:8080` for phpmyadmin <br>[username : root, password : no need, make it empty and hit Login]
+
