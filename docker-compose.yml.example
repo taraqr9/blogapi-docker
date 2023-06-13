@@ -22,7 +22,7 @@ services:
 
 
   mysql:
-    image: mysql:5.7.22
+    image: mysql:mysql:8.0.33
     container_name: mysql
     restart: unless-stopped
     tty: true
