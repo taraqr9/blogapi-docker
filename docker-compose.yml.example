@@ -22,7 +22,7 @@ services:
 
 
   mysql:
-    image: mysql:mysql:8.0.33
+    image: mysql:8.0.33
     container_name: mysql
     restart: unless-stopped
     tty: true
@@ -59,7 +59,5 @@ services:
     container_name: php
     volumes:
       - ./app:/var/www
-    ports:
-      - "9000:9000"
     networks:
       - laravel
